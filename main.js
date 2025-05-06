@@ -8,13 +8,13 @@ function Checkgrade() {
 	let finalaverage = Math.round((factor1 + factor2 + factor3)/3);
 
 
-	if (finalaverage > 93)
+	if (finalaverage > 93.99)
 		window.alert('Your grade is Excellent');
-	else if (finalaverage >86)
+	else if (finalaverage >86.99)
 		window.alert("Your grade is Above Satisfactory ");
-	else if (finalaverage >79)
+	else if (finalaverage >79.99)
 		window.alert("Your grade is Satisfactory");
-	else if (finalaverage >74)
+	else if (finalaverage >74.99)
 		window.alert("Your grade Needs Improvement");
 	else 
 		window.alert("You have Failed");
