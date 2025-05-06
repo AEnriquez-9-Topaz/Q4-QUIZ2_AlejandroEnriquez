@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quiz 2: Grade Analyzer</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Charm:wght@400;700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Delius&family=Ephesis&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rouge+Script&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Delius&family=Ephesis&family=Lexend:wght@100..900&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rouge+Script&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1 class="cen header"> Grade Analyzer! </h1>
+	<details> 
+	   <summary>Explanation and instructions</summary>
+	   <p class="marg"> Here, in this page, we will be accepting an input of your grade in three subjects, <i> English, Math, and Science </i>. Once you input these grades, we will calculate your average amongst all three inform you of your academic rating afterwards! </p>
+	</details>
+	<br><br>
+	<div class="row just">
+		<div class="card box col-sm-3">
+	  		<img src="https://th.bing.com/th/id/OIP.xGyE4Sn06wmIA5mw7su8TwAAAA?cb=iwp1&w=410&h=530&rs=1&pid=ImgDetMain" alt="English" style="height: 50%">
+	 		 <div class="container">
+	    		<h4 class="Charm"><b>English</b></h4> 
+	    		<br />
+	    		<label class="cen Noto"> Enter a value: </label>
+				<input type="number" id="grade1" placeholder="Enter your class grade">
+				<br /><br /><br />
+	  		</div>
+		</div>
+		<div class="card col-sm-3">
+	  		<img src="https://th.bing.com/th/id/OIP.yOcHpvAXoEYgyOoeoyJaRAAAAA?cb=iwp1&w=299&h=424&rs=1&pid=ImgDetMain" alt="Math" style="height: 50%">
+	 		 <div class="container">
+	    		<h4 class="Charm"><b>Math</b></h4> 
+	    		<br />
+	    		 <label class="cen Noto"> Enter a value: </label>
+				<input type="number" id="grade2" placeholder="Enter your class grade" >
+				<br /><br /><br />
+	  		</div>
+		</div>
+		<div class="card col-sm-3">
+	  		<img src="https://th.bing.com/th/id/OIP.ONt_MiR7qlrhSMcfNlLaPwHaJl?cb=iwp1&rs=1&pid=ImgDetMain" alt="Science" style="height: 50%">
+	 		 <div class="container">
+	    		<h4 class="Charm"><b>Science</b></h4> 
+	    		<br />
+	    		<label class="cen Noto"> Enter a value: </label>
+				<input type="number" id="grade3" placeholder="Enter your class grade">
+				<br /><br /><br />
+	  		</div>
+		</div>
+	</div>
+	<br><br>
+	<button type="button" id="Check" class="btn btn-lg btn-dark" onclick="Checkgrade()"> Analyze Grade</button>
+	<br><br>
+	<button type="buy button" id="buy" class="col-auto btn btn-dark" onClick="window.location.reload()"> Refresh </button>
+	<br><br><br><br><br>
+	<div class="footer">
+	<a href="https://github.com/AEnriquez-9-Topaz "> <h5> <i> 2025 | Alejandro M. Enriquez | 9-Topaz </i> </h5> </a>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
